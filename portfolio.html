@@ -21,46 +21,48 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="page-header">
-      <div class="container-header">
-        <nav class="nav-list">
-          <ul class="unstyled headerList">
-            <li class="nav-list-item">
-              <a class="logo" href="./index.html">Web</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="link linkStudio" href="./index.html">Studio</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="current-page" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="link linkContacts" href="#">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="container-right-list-header">
-          <ul class="right-nav-list unstyled">
-            <li class="list-info">
-              <a class="link linkInfo" href="mailto:info@devstudio.com">
-                <svg width="16" height="12">
-                  <use href="./global-svg.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
+    <header>
+      <section class="section__header">
+        <div class="container__header">
+          <nav class="nav-list">
+            <ul class="grid">
+              <li class="grid__item">
+                <a class="item__logo" href="./index.html">Web</a>
+              </li>
+              <li class="grid__item">
+                <a class="item__link" href="./index.html">Studio</a>
+              </li>
+              <li class="grid__item">
+                <a class="item__special" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="grid__item">
+                <a class="item__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="container__right__header">
+            <ul class="grid__right">
+              <li class="grid__right__info">
+                <a class="item__link" href="mailto:info@devstudio.com">
+                  <svg width="16" height="12">
+                    <use href="./global-svg.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
 
-            <li>
-              <a class="link linkTel" href="tel:+12127724150">
-                <svg width="10" height="16">
-                  <use href="./global-svg.svg#icon-phone"></use>
-                </svg>
-                +1 212-772-4150</a
-              >
-            </li>
-          </ul>
+              <li>
+                <a class="item__link" href="tel:+12127724150">
+                  <svg width="10" height="16">
+                    <use href="./global-svg.svg#icon-phone"></use>
+                  </svg>
+                  +1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
     </header>
     <main>
       <!--First Section-->
@@ -281,62 +283,77 @@
       </section>
     </main>
     <!--Footer-->
-    <footer class="page-footer">
-      <div class="container-footer">
-        <address>
-          <ul class="unstyled footerList">
-            <li><a class="logo-footer" href="./index.html">Web</a></li>
-            <li class="item-pozi">
-              <a class="link pozi-adress" href="#"
-                >695 Park Ave, NY 10065, USA</a
-              >
-            </li>
-            <li class="item-contact">
-              <a class="link contact-adress" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="link contact-adress" href="tel:+12127724150"
-                >+1 212-772-4150</a
-              >
-            </li>
-          </ul>
-        </address>
-        <div class="social-media-footer">
-          <h3 id="title-media-footer">Find us on</h3>
-          <ul class="unstyled social-media-list-footer">
-            <li class="icon-list-footer">
-              <a href="">
-                <svg width="20" height="20">
-                  <use href="./global-svg.svg#icon-instagram"></use>
+    <footer>
+      <section class="section__footer">
+        <div class="container__footer">
+          <address class="footer__item">
+            <ul class="footer__grid footerList">
+              <li class="footer__item">
+                <a class="footer__logo" href="./index.html">Web</a>
+              </li>
+              <li class="footer__pozition">
+                <a class="item__link" href="#">695 Park Ave, NY 10065, USA</a>
+              </li>
+              <li class="footer__contact">
+                <a class="item__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__contact">
+                <a class="item__link" href="tel:+12127724150"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="social__media__footer">
+            <h3 id="title_media_footer">Find us on</h3>
+            <ul class="social__media__footer__grid social-media-list-footer">
+              <li class="footer_item_icon icon-list-footer">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./global-svg.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_item_icon">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./global-svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_item_icon">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./global-svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_item_icon">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./global-svg.svg#icon-linkedin2"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="container__form">
+            <h3 class="title__form">Subscribe to the newsletter</h3>
+            <form name="Subscribe to the newsletter" class="inner__form">
+              <input type="email" name="email" placeholder="E-mail" />
+              <button class="button__form" type="submit">
+                Subscribe
+                <svg width="24" height="24">
+                  <use href="./global-svg.svg#icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="icon-list-footer">
-              <a href="">
-                <svg width="20" height="20">
-                  <use href="./global-svg.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-list-footer">
-              <a href="">
-                <svg width="20" height="20">
-                  <use href="./global-svg.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-list-footer">
-              <a href="">
-                <svg width="20" height="20">
-                  <use href="./global-svg.svg#icon-linkedin2"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
+      </section>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
