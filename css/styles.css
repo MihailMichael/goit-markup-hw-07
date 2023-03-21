@@ -619,17 +619,17 @@ button[type="button"] {
 /* PortfolioCss*/
 
 /*BottonSection*/
-.bottonSection {
+.section__botton {
   display: flex;
   justify-content: center;
   margin-top: 94px;
 }
-.container-botton-section {
+.container__botton {
   width: 1200px;
   display: flex;
   justify-content: center;
 }
-.list-botton {
+.grid__item {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -641,8 +641,9 @@ button[type="button"] {
   display: flex;
   justify-content: center;
   gap: 8px;
+  list-style: none;
 }
-.mark-botton {
+.grid__botton {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -652,8 +653,8 @@ button[type="button"] {
   color: #212121;
   border: 0;
 }
-.mark-botton:hover,
-.mark-botton:focus {
+.grid__botton:hover,
+.grid__botton:focus {
   color: #ffffff;
   background-color: #2196f3;
   border-color: #2196f3;
@@ -663,18 +664,18 @@ button[type="button"] {
   transition: color, border, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-porto {
+.grid__link {
   padding: 6px 22px;
   color: #212121;
   text-decoration: none;
 }
-.link-porto:hover,
-.link-porto:focus {
+.grid__link:hover,
+.grid__link:focus {
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Second Section - Card list */
-.card-list {
+.section__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -682,10 +683,11 @@ button[type="button"] {
   margin-top: 34px;
   margin-bottom: 94px;
 }
-.container-card-list {
+.container__card {
   width: 1200px;
+  margin-bottom: 94px;
 }
-.titles {
+.item__title {
   width: 322px;
   height: 36px;
   font-weight: 700;
@@ -695,7 +697,7 @@ button[type="button"] {
   color: #212121;
   margin: 20px 24px 4px 24px;
 }
-.specialtys {
+.item__specialty {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -703,26 +705,27 @@ button[type="button"] {
   color: #757575;
   margin: 4px 24px 20px 24px;
 }
-.cards {
+.grid__card {
   display: flex;
   gap: 30px;
   justify-content: flex-end;
+  list-style: none;
 }
-.item-cards {
+.item__cards {
   position: relative;
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
-.item-cards a {
+.item__cards a {
   text-decoration: none;
 }
-.item-cards:hover,
-.item-cards:focus {
+.item__cards:hover,
+.item__cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay-porto {
+.overlay__item {
   display: flex;
   position: absolute;
   width: 370px;
@@ -732,15 +735,15 @@ button[type="button"] {
   align-items: center;
   visibility: hidden;
 }
-.item-cards:hover .overlay-porto,
-.item-cards:focus .overlay-porto {
+.item__cards:hover .overlay__item,
+.item__cards:focus .overlay__item {
   position: absolute;
   visibility: visible;
   top: 100px;
   transform: translateY(-34%);
   transition: transform 255ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay-text {
+.overlay__text {
   width: 322px;
   height: 140px;
   left: 239px;
@@ -755,9 +758,6 @@ button[type="button"] {
 }
 
 /*Footer porto*/
-.footer-portfolio {
-  margin-top: 94px;
-}
 .social__media__footer {
   display: flex;
   padding-top: 15px;
