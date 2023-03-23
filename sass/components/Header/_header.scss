@@ -24,23 +24,17 @@
   gap: 40px;
   align-items: center;
   justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   list-style: none;
 }
 .item__special {
+  border-bottom: 4px solid #2196f3;
+  border-radius: 2px;
+  padding-bottom: 13px;
+  padding-top: 17px;
   text-decoration: none;
   color: #2196f3;
-  padding-bottom: 18px;
-  border-bottom: 2px solid #2196f3;
-  border-radius: 2px;
-
-  &:hover,
-  &:focus {
-    color: #2196f3;
-    transition: color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
+
 .container__right__header {
   display: flex;
   flex-direction: column;
