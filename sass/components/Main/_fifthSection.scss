@@ -1,10 +1,10 @@
-.fifth__section {
+.fifth-section {
   display: flex;
   justify-content: center;
   margin-top: 94px;
   margin-bottom: 94px;
 }
-.container__fifth__section {
+.container-fifth-section {
   display: flex;
   flex-direction: column;
   & ul {
@@ -14,7 +14,7 @@
   }
 }
 
-.customer__item a {
+.fifth-grid__item a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
     transition: fill, border, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.fifth__title {
+.fifth-title {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;

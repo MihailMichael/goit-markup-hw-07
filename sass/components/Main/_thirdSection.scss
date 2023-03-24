@@ -1,16 +1,16 @@
-.third__section {
+.third-section {
   display: flex;
   margin-top: 94px;
   justify-content: center;
 }
-.third__title {
+.third-title {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
-.container__third__section {
+.container-third-section {
   display: flex;
   width: 1200px;
   flex-wrap: wrap;
@@ -21,11 +21,11 @@
     gap: 30px;
   }
 }
-.third__grid {
+.third-grid {
   list-style: none;
 }
 
-.third__product {
+.third-product {
   display: flex;
   position: absolute;
   width: 370px;
@@ -34,7 +34,7 @@
   justify-content: center;
   align-items: center;
 }
-.grid__item {
+.third-grid__item {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -49,7 +49,7 @@
   list-style: none;
   align-items: flex-end;
 }
-.third__product__title {
+.third-product__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
