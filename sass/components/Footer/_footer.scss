@@ -13,15 +13,46 @@
   display: flex;
   margin: 0 auto;
 }
-.footer-grid__pozition,
-.footer-grid__contact {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+.footer-grid {
+  list-style: none;
+  &__pozition,
+  &__contact {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+  }
+  &__pozition {
+    margin-top: 28px;
+    margin-bottom: 12px;
+    & a {
+      color: #ffffff;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: #2196f3;
+        fill: #2196f3;
+        transition: color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+  &__contact {
+    margin-bottom: 12px;
+    & a {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: #2196f3;
+        fill: #2196f3;
+        transition: color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
 }
+
 .social-media-grid_item a {
   display: flex;
   width: 44px;
@@ -32,34 +63,8 @@
   justify-content: center;
   fill: #ffffff;
 }
-.footer-grid__pozition {
-  margin-top: 28px;
-  margin-bottom: 12px;
-  & a {
-    color: #ffffff;
-    text-decoration: none;
-    &:hover,
-    &:focus {
-      color: #2196f3;
-      fill: #2196f3;
-      transition: color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-}
-.footer-grid__contact {
-  margin-bottom: 12px;
-  & a {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    &:hover,
-    &:focus {
-      color: #2196f3;
-      fill: #2196f3;
-      transition: color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-}
-.footer-grid__item-logo {
+
+. .footer-grid__item-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -73,9 +78,7 @@
     color: #ffffff;
   }
 }
-.footer-grid {
-  list-style: none;
-}
+
 .social-media-footer {
   display: flex;
   padding-top: 15px;
@@ -89,7 +92,7 @@
   list-style: none;
 }
 
-#title-media-footer {
+.title-media-footer {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
